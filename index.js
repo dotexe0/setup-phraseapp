@@ -28,7 +28,7 @@ async function run() {
     }
 
     const fileName = osPlat === 'win32'
-      ? `phrase_${osMapper[osPlat]}_${archMapper[osArch]}.exe`
+      ? `phrase_${osMapper[osPlat]}_${archMapper[osArch]}_setup.exe`
       : `phrase_${osMapper[osPlat]}_${archMapper[osArch]}`
 
     const downloadUrl = 'https://github.com/phrase/phrase-cli/releases/download/' + version + '/' + fileName;
